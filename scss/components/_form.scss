@@ -33,6 +33,9 @@
 		padding-left: rem(12px);
 		font-size: rem(14px);
 		border:rem(3px) solid transparent;
+		@include phones{
+			font-size: rem(18px);
+		}
 		&:focus{
 			border-color:#FEDB3F;
 		}
