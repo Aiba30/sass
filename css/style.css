@@ -761,7 +761,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .radio__visible--checkbox::before {
-  background: url("../../img/bird.jpg") 100% 100%/cover no-repeat;
+  background: url("../img/bird.jpg") 100% 100%/cover no-repeat;
 }
 
 .radio__title {
