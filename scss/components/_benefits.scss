@@ -3,6 +3,7 @@
 	margin: 0 rem(-21.5px);
 @include phones{
 	flex-direction: column;
+	padding: 0 rem(10px);
 }
 	&__item {
 		flex: 1 1 auto;
@@ -12,6 +13,9 @@
 		align-items: center;
 		padding: 0 rem(21.5px);
 		position: relative;
+		@include phones{
+			flex-direction: row;
+		}
 		&::after{
 			content: '';
 			display: block;
@@ -23,6 +27,9 @@
 			top: rem(50px);
 			right:0;
 			transform: translateX(50%);
+			@include phones{
+				display: none;
+			}
 		}
 	}
 	&__item:last-child{
@@ -51,10 +58,17 @@
 	}
 
 	&__text {
+		@include phones{
+			padding: 0 10% 0 2%;
+			text-align: left;
+		}
 	}
 
 	&__title {
 		margin-bottom: rem(20px);
+		font-size:rem(27px);
+		font-weight: 700;
+		color: #000;
 	}
 
 	&__desc {
