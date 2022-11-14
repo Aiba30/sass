@@ -10,7 +10,7 @@ $phones:480px;
 @import "_null.scss","components/media","components/hero","components/header",
 "components/btn","components/features","components/section","components/benefits",
 "components/reviews","components/display","components/form","components/order-section",
-"components/radio","components/fixed-menu","components/burger-menu";
+"components/radio","components/fixed-menu","components/burger-menu","components/footer";
 
 html{
 	font-size: $basefont-size;
@@ -28,6 +28,9 @@ html{
 	overflow: hidden;
 	font-family:'Alegreya Sans';
 	color: #666666;
+}
+.main__content{
+	flex:1;
 }
 .container {
 	max-width:$containerwidth;
