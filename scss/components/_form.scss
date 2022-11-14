@@ -33,7 +33,11 @@
 		padding-left: rem(12px);
 		font-size: rem(14px);
 		border:rem(3px) solid transparent;
+		@include tablets{
+			height: rem(36px);
+		}
 		@include phones{
+			height: rem(36px);
 			font-size: rem(24px);
 		}
 		&:focus{
@@ -44,6 +48,12 @@
 	&__input--textarea {
 		height: rem(152px);
 		resize: none;
+		@include tablets{
+			height: rem(82px);
+		}
+		@include phones{
+			height: rem(82px);
+		}
 	}
 	&__controls{
 		display: flex;
