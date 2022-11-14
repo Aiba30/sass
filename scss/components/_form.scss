@@ -1,0 +1,61 @@
+.form {
+	display: flex;
+	margin: 0 rem(-13.5px);
+	color: #fff;
+	padding:0 5px;
+	&__btns{
+		display: flex;
+		margin-top: rem(46px);
+	}
+	&__col {
+		padding:0 rem(13.5px);
+		flex: 1;
+	}
+
+	&__row {
+		display: flex;
+		margin: 0 rem(-6px);
+		margin-bottom: rem(12px);
+	}
+
+	&__block {
+		flex: 1;
+		padding: 0 rem(6px);
+	}
+
+	&__title {
+	}
+
+	&__input {
+		width: 100%;
+		height: rem(58px);
+		border-radius: rem(4px);
+		padding-left: rem(12px);
+		font-size: rem(14px);
+		border:rem(3px) solid transparent;
+		&:focus{
+			border-color:#FEDB3F;
+		}
+	}
+
+	&__input--textarea {
+		height: rem(152px);
+		resize: none;
+	}
+	&__controls{
+		display: flex;
+		flex-wrap: wrap;
+	}	
+}
+.form{
+	@include tablets{
+		flex-direction: column;
+		padding:0 19%;
+		&__controls:not(:last-child){
+			margin-bottom: rem(24px);
+		}
+		&__btns{
+			justify-content: center;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+
+.burger {
+	display: none;
+	&__block {
+		background: #fff;
+		width: 26px;
+		height: 4.5px;
+		border-radius: 10px;
+	}
+	&__block:not(:last-child){
+		margin-bottom: 5.31px;
+	}
+}
+.burger{
+	@include tablets{
+		display: inline-flex;
+	flex-direction: column;
+	}
+}

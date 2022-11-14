@@ -1,0 +1,25 @@
+.display {
+display:flex;
+justify-content: center;
+	&__item:not(:last-child) {
+		margin-right: rem(6px);
+	}
+
+	&__icon {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	&__link{}
+}
+.avatar {
+	border-radius: 50%;
+	width: rem(74px);
+	height: rem(74px);
+	overflow: hidden;
+	border: rem(6px) solid transparent;
+}
+.avatar--active{
+	border-color: #FEDB3F;
+}
+

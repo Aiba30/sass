@@ -1,0 +1,17 @@
+.btn{
+	width: rem(156px);
+	height: rem(60px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: rem(100px);
+	background: #FEDB3F;
+	color: #000;
+	font-size: rem(16px);
+	font-weight: 800;
+}
+.btn--clear{
+	background-color:transparent;
+	color: #fff;
+	margin-left: rem(22px);
+}

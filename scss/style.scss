@@ -1,0 +1,38 @@
+$black:#292929;
+$containerwidth:940px;
+$basefont-size:18px;
+
+//breakepoints
+$tablets:768px;
+$phones:480px;
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
+@import "_null.scss","components/media","components/hero","components/header",
+"components/btn","components/features","components/section","components/benefits",
+"components/reviews","components/display","components/form","components/order-section",
+"components/radio","components/fixed-menu","components/burger-menu";
+
+html{
+	font-size: $basefont-size;
+	@include tablets{
+		font-size: $basefont-size - 1.5px;
+	}
+	@include phones{
+		font-size: $basefont-size - 2.5px;
+	}
+}
+.wrappper{
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	overflow: hidden;
+	font-family:'Alegreya Sans';
+	color: #666666;
+}
+.container {
+	max-width:$containerwidth;
+	margin: 0 auto;
+	padding: rem(0 10px);
+}
+
+
