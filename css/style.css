@@ -654,7 +654,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 480px) {
   .form__input {
     height: 2rem;
-    font-size: 1.33333rem;
+    font-size: 1rem;
   }
 }
 
