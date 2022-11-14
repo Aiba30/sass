@@ -1,9 +1,12 @@
 
 .hero {
-	background: url('../img/unsplash.png') 100% 100%/cover no-repeat;
+	background: url('../img/unsplash.png') 100% 30%/cover no-repeat;
 	height: 100vh;
 	min-height: rem(652px);
 	color: #fff;
+	@include tablets{
+		background:url('../img/unsplash.png') 80% 60px /cover no-repeat ;
+	}
 
 	&__container{
 		display: flex;

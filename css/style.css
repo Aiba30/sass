@@ -75,10 +75,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 .hero {
-  background: url("../img/unsplash.png") 100% 100%/cover no-repeat;
+  background: url("../img/unsplash.png") 100% 30%/cover no-repeat;
   height: 100vh;
   min-height: 36.22222rem;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background: url("../img/unsplash.png") 80% 60px/cover no-repeat;
+  }
 }
 
 .hero__container {
